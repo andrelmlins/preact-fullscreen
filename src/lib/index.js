@@ -1,36 +1,40 @@
-import { h } from "preact";
-import { useRef, useEffect } from "preact/hooks";
+import { h, Component, createRef } from "preact";
 import screenfull from "screenfull";
 
-const FullScreenComponent = ({ children, onChange, onError }) => {
-  const ref = useRef();
+class FullScreenComponent extends Component {
+  constructor(props) {
+    super(props);
 
-  useEffect(() => {
+    this.ref = createRef();
+  }
+
+  componentDidMount() {
     screenfull.onchange(() => {
-      if (onChange) {
-        onChange();
+      if (this.props.onChange) {
+        this.props.onChange();
       }
     });
     screenfull.on("error", event => {
-      if (onError) {
-        onError();
+      if (this.props.onError) {
+        this.props.onError();
       }
     });
-  }, []);
+  }
 
-  return children({
-    ref,
-    isEnabled: screenfull.isEnabled,
-    onToggle: () => {
-      screenfull.toggle(ref.current);
-    },
-    onRequest: () => {
-      screenfull.request(ref.current);
-    },
-    onExit: () => {
-      screenfull.exit(ref.current);
-    }
-  });
-};
+  render(props) {
+    return props.children({
+      ref: this.ref,
+      onToggle: () => {
+        screenfull.toggle(this.ref.current);
+      },
+      onRequest: () => {
+        screenfull.request(this.ref.current);
+      },
+      onExit: () => {
+        screenfull.exit(this.ref.current);
+      }
+    });
+  }
+}
 
 export default FullScreenComponent;
