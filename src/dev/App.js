@@ -1,4 +1,5 @@
 import { h } from "preact";
+import PreactFullScreen from "../lib";
 
 const App = () => (
   <div class={style.home}>

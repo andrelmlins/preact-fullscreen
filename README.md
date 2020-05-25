@@ -12,7 +12,7 @@ npm i preact-fullscreen
 yarn add preact-fullscreen
 ```
 
-## Demo [Link](https://preact-fullscreen.netlify.com/)
+## Demo
 
 Local demo:
 
@@ -21,6 +21,45 @@ git clone https://github.com/andrelmlins/preact-fullscreen.git
 cd preact-fullscreen
 yarn install && yarn start
 ```
+
+## Examples
+
+```jsx
+import { h, render } from "preact";
+import PreactFullscreeen from "preact-ullscreen";
+
+const App = () => (
+  <PreactFullscreeen>
+    {({ ref, onRequest, onExit }) => (
+      <div
+        ref={ref}
+        style={{ backgroundColor: "red", width: 120, height: 120 }}
+      >
+        <button onClick={() => onRequest()}>FullScreen</button>
+        <button onClick={() => onExit()}>Screen</button>
+      </div>
+    )}
+  </PreactFullscreeen>
+);
+
+render(<App />, document.body);
+```
+
+## Properties
+
+| Prop     | Type | Description    |
+| -------- | ---- | -------------- |
+| onChange | func | Call in change |
+| onError  | func | Call in error  |
+
+### Children Function Properties
+
+| Prop      | Type   | Description                |
+| --------- | ------ | -------------------------- |
+| ref       | object | Ref dom element            |
+| onToggle  | func   | Call for fullscreen toggle |
+| onExit    | func   | Call for fullscreen exit   |
+| onRequest | func   | Call for fullscreen enter  |
 
 ## NPM Statistics
 
