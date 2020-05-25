@@ -1,11 +1,23 @@
 {
   "name": "preact-fullscreen",
+  "description": "Component that performs fullscreen in DOM Elements",
   "version": "0.1.0",
   "module": "dist/index.umd.js",
   "main": "dist/index.js",
-  "author": "André Lins",
+  "repository": "https://github.com/andrelmlins/preact-fullscreen",
+  "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
   "license": "MIT",
   "private": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "preact",
+    "fullscreen"
+  ],
+  "bugs": {
+    "url": "https://github.com/andrelmlins/preact-fullscreen/issues"
+  },
   "scripts": {
     "build": "microbundle -i src/lib -f cjs,umd",
     "dev": "rollup -c -w"
