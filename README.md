@@ -1,4 +1,4 @@
-# Preact FullScreen
+# Preact Fullscreen
 
 [![npm version](https://badge.fury.io/js/preact-fullscreen.svg)](https://www.npmjs.com/package/preact-fullscreen) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/preact-fullscreen/blob/master/LICENSE) &bull; [![Build Status](https://travis-ci.com/andrelmlins/preact-fullscreen.svg?branch=master)](https://travis-ci.com/andrelmlins/preact-fullscreen) &bull; [![Dependencies](https://david-dm.org/andrelmlins/preact-fullscreen.svg)](https://david-dm.org/andrelmlins/preact-fullscreen)
 
@@ -26,7 +26,7 @@ yarn install && yarn start
 
 ```jsx
 import { h, render } from "preact";
-import PreactFullscreeen from "preact-ullscreen";
+import PreactFullscreeen from "preact-fullscreen";
 
 const App = () => (
   <PreactFullscreeen>
@@ -69,4 +69,4 @@ Download stats for this NPM package
 
 ## License
 
-Preact FullScreen is open source software [licensed as MIT](https://github.com/andrelmlins/preact-fullscreen/blob/master/LICENSE).
+Preact Fullscreen is open source software [licensed as MIT](https://github.com/andrelmlins/preact-fullscreen/blob/master/LICENSE).
