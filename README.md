@@ -1,6 +1,6 @@
 # Preact Fullscreen
 
-[![npm version](https://badge.fury.io/js/preact-fullscreen.svg)](https://www.npmjs.com/package/preact-fullscreen) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/preact-fullscreen/blob/master/LICENSE) &bull; [![Build Status](https://travis-ci.com/andrelmlins/preact-fullscreen.svg?branch=master)](https://travis-ci.com/andrelmlins/preact-fullscreen) &bull; [![Dependencies](https://david-dm.org/andrelmlins/preact-fullscreen.svg)](https://david-dm.org/andrelmlins/preact-fullscreen)
+[![npm version](https://badge.fury.io/js/preact-fullscreen.svg)](https://www.npmjs.com/package/preact-fullscreen) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/preact-fullscreen/blob/master/LICENSE) &bull; [![Build Status](https://travis-ci.com/andrelmlins/preact-fullscreen.svg?branch=master)](https://travis-ci.com/andrelmlins/preact-fullscreen)
 
 Component that performs fullscreen in DOM Elements
 
