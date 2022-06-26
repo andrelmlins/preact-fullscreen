@@ -61,11 +61,11 @@ render(<App />, document.body);
 | onExit    | func   | Call for fullscreen exit   |
 | onRequest | func   | Call for fullscreen enter  |
 
-## NPM Statistics
+## Browsers Support
 
-Download stats for this NPM package
+You can see the list of supported browsers [here](https://caniuse.com/fullscreen)
 
-[![NPM](https://nodei.co/npm/preact-fullscreen.png)](https://nodei.co/npm/preact-fullscreen/)
+![Browsers support](assets/browser-support.png)
 
 ## License
 
